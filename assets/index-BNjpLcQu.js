@@ -410,8 +410,7 @@ Error generating stack: `+o.message+`
     border-radius: 15px;
     padding: 73px;
     margin-top: 79px;
-    margin-left: 10%;
-    margin-right: 10%;
+    padding: 0 10%;
 
     @media screen and (max-width: ${wo}) {
         padding: 73px 10px;
@@ -468,8 +467,7 @@ Error generating stack: `+o.message+`
     border-radius: 15px;
     padding: 73px;
     margin-top: 79px;
-    margin-left: 10%;
-    margin-right: 10%;
+    padding: 0 10%;
 
     @media screen and (max-width: ${xo}) {
         padding: 73px 10px;
