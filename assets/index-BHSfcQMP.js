@@ -119,8 +119,7 @@ Error generating stack: `+o.message+`
     justify-content: space-between;
     margin-top: 6rem;
     z-index: 1;
-    margin-left: 10%;
-    margin-right: 10%;
+    padding: 0 10%; 
 
     @media screen and (max-width: 1024px) {
         flex-direction: column-reverse;
