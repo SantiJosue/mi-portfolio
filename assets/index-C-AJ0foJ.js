@@ -451,6 +451,7 @@ Error generating stack: `+o.message+`
 
     @media screen and (max-width: ${wo}) {
         text-align: center;
+        gap: 0;
     }
 
     h3{
