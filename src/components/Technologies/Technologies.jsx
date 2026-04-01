@@ -69,7 +69,6 @@ const Skills = styled.div`
     width: 45%;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
     gap: 37px;
 
     @media screen and (max-width: ${breakpoint}) {

@@ -102,7 +102,8 @@ const Link = styled.a`
     transition: all .3s;
 
     &:hover{
-      opacity: 0.8;
+      background: var(--color-text);
+      color: var(--color-primary);
     }
 `;
 
