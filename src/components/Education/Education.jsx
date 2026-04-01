@@ -32,10 +32,14 @@ const Container = styled.section`
     color: var(--color-text);
     background: rgba(12, 12, 12, 0.4);
     border-radius: 15px;
-    padding: 73px;
-    margin-top: 79px;
-    margin-left: 10%;
-    margin-right: 10%;
+    position: relative;
+    padding: 2rem 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+    margin: 6rem auto 0 auto;
+    max-width: 1200px;
 
     @media screen and (max-width: ${breakpoint}) {
         padding: 73px 10px;
@@ -58,7 +62,6 @@ const EducationSection = styled.section`
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 14px;
 
     @media screen and (max-width: ${breakpoint}) {
         flex-direction: column;
@@ -79,9 +82,12 @@ const EducationItem = styled.section`
     justify-content: center;
     align-items: center;
     gap: 5px;
+    padding: 10px 15px;
+    border-radius: 10px;
 
     @media screen and (max-width: ${breakpoint}) {
         text-align: center;
+        gap: 0;
     }
 
     h3{

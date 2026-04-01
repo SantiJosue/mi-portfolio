@@ -17,16 +17,22 @@ const Projects = () => {
     );
 }
 
+const breakpoint = "1024px"
+
 const Container = styled.section`
-    margin-top: 76px;
+    color: var(--color-text);
     background: rgba(12, 12, 12, 0.4);
     border-radius: 15px;
-    padding: 73px;
-    color: var(--color-text);
-    margin-left: 10%;
-    margin-right: 10%;
+    position: relative;
+    padding: 2rem 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+    margin: 6rem auto 0 auto;
+    max-width: 1200px;
 
-    @media screen and (max-width: 830px) {
+    @media screen and (max-width: ${breakpoint}) {
         padding: 73px 10px;
     }
 `;
@@ -43,9 +49,9 @@ const Title = styled.h2`
 `;
 
 const Content = styled.div`
-    margin-top: 37px;
+    margin-top: 2rem;
     display: flex;
-    flex-direction: row;
+    gap: 2rem;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;

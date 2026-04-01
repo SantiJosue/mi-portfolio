@@ -30,10 +30,14 @@ const Container = styled.section`
     color: var(--color-text);
     background: rgba(12, 12, 12, 0.4);
     border-radius: 15px;
-    padding: 73px;
-    margin-top: 79px;
-    margin-left: 10%;
-    margin-right: 10%;
+    position: relative;
+    padding: 2rem 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+    margin: 6rem auto 0 auto;
+    max-width: 1200px;
 
     @media screen and (max-width: ${breakpoint}) {
         padding: 73px 10px;
@@ -46,10 +50,6 @@ const Title = styled.h2`
     font-weight: 700;
     letter-spacing: 1.75px;
     text-transform: uppercase;
-
-    @media screen and (max-width: ${breakpoint}) {
-        text-align: center;
-    }
 `;
 
 const Content = styled.div`
@@ -89,7 +89,7 @@ const Skill = styled.div`
     transition: all .3s;
 
     &:hover{
-        transform: scale(1.1);
+        opacity: .8;
     }
 
     p{
@@ -100,7 +100,7 @@ const Skill = styled.div`
 `;
 
 const SkillImageContainer = styled.figure`
-    background-color: var(--color-secondary);
+    background-color: var(--color-dark);
     border-radius: 100%;
     display: flex;
     align-items: center;

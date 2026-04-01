@@ -29,7 +29,7 @@ const Container = styled.section`
     display: flex;
     flex-direction: column;
     border-radius: 10px;
-    background: linear-gradient(180deg, #576cbc 0%, #132a53 100%);
+    background: var(--color-dark);
     box-shadow: 0 16px 14px 0 #04152d;
     padding: 18px 24px;
     max-width: 345px;
@@ -37,12 +37,7 @@ const Container = styled.section`
 
     @media screen and (max-width: 830px) {
           padding: 18px 12px;
-          /* width: 100%; */
           max-width: 300px;
-        }
-
-    &:hover{
-        transform: scale(1.05);
     }
 `;
 

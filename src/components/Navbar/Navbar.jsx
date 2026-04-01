@@ -41,7 +41,7 @@ const Nav = styled.header`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 61px;
+    padding-top: 3rem;
     z-index: 2;
     margin: 0 10%;
 
@@ -94,7 +94,6 @@ const MenuItem = styled.ul`
         gap: 13px;
         border-radius: 10px;
         background: rgb(25, 55, 109);
-        background: linear-gradient(0deg, rgba(25, 55, 109, 0.2) 0%, rgba(25, 55, 109, 1) 100%);
         padding: 24px 33px;
         box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
     }
