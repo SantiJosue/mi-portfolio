@@ -123,7 +123,7 @@ Error generating stack: `+o.message+`
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    padding: 0 20px;
+    padding: 0 10%;
 
     @media screen and (max-width: 1024px) {
         flex-direction: column-reverse;
