@@ -46,6 +46,7 @@ Error generating stack: `+o.message+`
     padding-top: 3rem;
     z-index: 2;
     margin: 0 10%;
+  background-color: red;
 
     @media screen and (max-width: ${Ao}){
         flex-direction: column;
