@@ -117,7 +117,7 @@ Error generating stack: `+o.message+`
     align-items: center;
     text-align: center;
     justify-content: space-between;
-    margin-top: 6rem;
+    margin-top: 3rem;
     z-index: 1;
 
     max-width: 1200px;
