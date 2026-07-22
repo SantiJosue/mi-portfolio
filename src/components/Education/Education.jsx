@@ -1,34 +1,30 @@
 import styled from "styled-components";
 import { getImageUrl } from "../../utils";
+import { Section } from "../common/Section";
+import { cardStyles } from "../common/Card";
+import education from './../../data/education.json'
 
 const Education = () => {
     return (
         <Container id="educacion">
-                <Title>Educación</Title>
+            <Title>Educación</Title>
             <EducationSection>
-                <EducationItem>
-                    <EducationImg src={getImageUrl("education/ArgPrograma.svg")} alt="Logo de Argentina Programa" />
-                    <h3>Desarrollador Web Full-Stack Jr</h3>
-                    <p><strong>Marzo 2022 <span>-</span> Enero 2023</strong></p>
-                </EducationItem>
-                <EducationItem>
-                    <EducationImg src={getImageUrl("education/UdemyLogo.svg")} alt="Logo de Argentina Programa" />
-                    <h3>React y Firebase</h3>
-                    <p><strong>Febrero 2023 <span>-</span> Octubre 2023</strong></p>
-                </EducationItem>
-                <EducationItem>
-                    <EducationImg src={getImageUrl("education/UdemyLogo.svg")} alt="Logo de Argentina Programa" />
-                    <h3>NodeJS</h3>
-                    <p><strong>Noviembre 2023 <span>-</span> Junio 2024</strong></p>
-                </EducationItem>
+            {education.map((education) => (
+                    <EducationItem key={education.title}>
+                        <EducationLogo>
+                            <EducationImg src={getImageUrl(education.institutionLogo)} alt="Logo de Argentina Programa" />
+                        </EducationLogo>
+                        <h3>{education.title}</h3>
+                        <Date><strong>{education.year[0]} <Separator>-</Separator> {education.year[1]}</strong></Date>
+                        <CertificateBtn href={education.certificate} target="_blank" rel="noopener noreferrer">Ver certificado</CertificateBtn>
+                    </EducationItem>
+            ))}
             </EducationSection>
         </Container>
     );
 }
 
-const breakpoint = "1024px";
-
-const Container = styled.section`
+const Container = styled(Section)`
     color: var(--color-text);
     background: rgba(12, 12, 12, 0.4);
     border-radius: 15px;
@@ -38,67 +34,92 @@ const Container = styled.section`
     flex-direction: column;
     gap: 2rem;
     text-align: center;
-    margin: 6rem auto 0 auto;
-    max-width: 1200px;
-
-    @media screen and (max-width: ${breakpoint}) {
-        padding: 73px 10px;
-    }
 `;
 
 const Title = styled.h2`
-    font-size: 35px;
-    font-size: 35px;
+    font-size: 2rem;
     font-weight: 700;
-    letter-spacing: 1.75px;
+    letter-spacing: 2px;
     text-transform: uppercase;
-
-    @media screen and (max-width: ${breakpoint}) {
-        text-align: center;
-    }
+    text-align: center;
 `;
 
 const EducationSection = styled.section`
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
-    @media screen and (max-width: ${breakpoint}) {
-        flex-direction: column;
-        justify-content: center;
-        gap: 20px;
-    }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
 `;
 
 const EducationImg = styled.img`
-    width: 140px;
-    filter: invert(1);
-    object-fit: contain;
+    width:90%;
+    height:90%;
+    filter:invert(1);
+    object-fit:contain;
 `;
  
-const EducationItem = styled.section`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-    padding: 10px 15px;
-    border-radius: 10px;
+const EducationItem = styled.article`
+    ${cardStyles}
 
-    @media screen and (max-width: ${breakpoint}) {
-        text-align: center;
-        gap: 0;
-    }
+    flex: 1 1 280px;
+    max-width: 340px;
+    min-height: 300px;
+    padding: clamp(1.5rem, 4vw, 2rem);
+    color:inherit;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    justify-self: center;
+    align-items:center;
+    gap:1rem;
+    transition: .3s;
 
     h3{
-        color: var(--color-primary);
-        font-size: 22px;
+        color:var(--color-primary);
+        font-size:clamp(1.2rem,2vw,1.4rem);
+        margin:0;
     }
 
     span {
         color: var(--color-primary);
-        font-size: 18px;
     }
+`;
+
+const Date = styled.p`
+
+`
+
+const Separator = styled.span`
+    
+`
+
+const CertificateBtn = styled.a`
+    text-decoration: none;
+    color: var(--color-text);
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 100px;
+    background: var(--color-primary);
+    padding: .5rem 3rem;
+    transition: 0.3s;
+    width: 100%;
+
+    &:hover{
+        background-color:var(--color-text);
+        color:var(--color-primary);
+    }
+`
+
+const EducationLogo = styled.div`
+    width:clamp(120px, 8vw, 140px);
+    height:clamp(120px, 8vw, 140px);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:rgba(4,21,45,.7);
+    border-radius:50%;
+    border: 1px solid rgba(87,108,188,.25);
+    padding:12px;
 `;
 
 export default Education;

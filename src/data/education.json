@@ -1,0 +1,20 @@
+[
+    {
+        "title": "Desarrollador Web",
+        "year": ["Marzo 2022", "Enero 2023"],
+        "institutionLogo": "education/ArgPrograma.svg",
+        "certificate": "/certificados/Argentina-Programa.pdf"
+    },
+    {
+        "title": "React y Firebase",
+        "year": ["Febrero 2023", "Octubre 2023"],
+        "institutionLogo": "education/UdemyLogo.svg",
+        "certificate": "/certificados/React-Firebase.pdf"
+    },
+    {
+        "title": "Node.js",
+        "year": ["Noviembre 2023", "Junio 2024"],
+        "institutionLogo": "education/UdemyLogo.svg",
+        "certificate": "/certificados/Nodejs.pdf"
+    }
+]

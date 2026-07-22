@@ -1,26 +1,145 @@
 [
-    {
-      "title": "Tienda",
-      "imageSrc": "projects/project.png",
-      "description": "This is a project made to learn the latest languages by building an app.",
-      "skills": ["React", "Express", "Node"],
-      "demo": "https://santijosue.github.io/app-tienda/",
-      "source": "https://www.github.com"
-    },
-    {
-      "title": "Project B",
-      "imageSrc": "projects/project.png",
-      "description": "This is a project made to learn the latest languages by building an app.",
-      "skills": ["React", "Express", "Node", "Sass"],
-      "demo": "https://www.example.com",
-      "source": "https://www.github.com"
-    },
-    {
-      "title": "Project C",
-      "imageSrc": "projects/project.png",
-      "description": "This is a project made to learn the latest languages by building an app.",
-      "skills": ["React", "Express", "Node"],
-      "demo": "https://www.example.com",
-      "source": "https://www.github.com"
-    }
-  ]
+  {
+    "title": "Habit Tracker",
+    "category": "Full Stack",
+    "status": "En desarrollo",
+    "completed": false,
+    "year": "2026 - 2026",
+    "imageSrc": "projects/habitTracker.png",
+    "description": "Aplicación web full stack con autenticación JWT que permite gestionar hábitos personales y realizar seguimiento automático de rachas.",
+    "skills": [
+      "React",
+      "Express",
+      "MongoDB",
+      "JWT",
+      "Tailwind CSS"
+    ],
+    "features": [
+      "Autenticación mediante JWT",
+      "Protección de rutas privadas",
+      "Seguimiento automático de rachas"
+    ],
+    "demo": "",
+    "source": "https://github.com/SantiJosue/habit-tracker"
+  },
+  {
+    "title": "Uptask",
+    "category": "Full Stack",
+    "status": "Completado",
+    "year": "2026 - 2026",
+    "completed": true,
+    "imageSrc": "projects/uptask.png",
+    "description": "Aplicación web full stack para la gestión de proyectos y tareas, con autenticación de usuarios y herramientas para organizar, administrar y dar seguimiento al progreso de cada proyecto.",
+    "skills": ["React", "Express", "Node", "MongoDB", "Sass", "JWT"],
+    "features": [
+      "Autenticación y autorización de usuarios",
+      "Gestión de proyectos y tareas",
+      "Organización del trabajo mediante estados",
+      "API REST desarrollada con Express"
+    ],
+    "demo": "https://uptask-frontend-gules.vercel.app",
+    "source": "https://github.com/SantiJosue/uptask"
+  },
+  {
+    "title": "Budget Planner",
+    "category": "Frontend",
+    "status": "Completado",
+    "year": "2025 - 2025",
+    "completed": true,
+    "imageSrc": "projects/budget-planner.png",
+    "description": "Aplicación web para la planificación y control de gastos personales. Permite establecer un presupuesto, registrar movimientos y visualizar el dinero disponible mediante una interfaz interactiva.",
+    "skills": [
+      "React",
+      "TypeScript",
+      "Vite",
+      "Tailwind CSS",
+      "Context API",
+      "React Swipeable List"
+    ],
+    "features": [
+      "Gestión de presupuesto personal",
+      "Registro y edición de gastos",
+      "Visualización del progreso del presupuesto",
+      "Acciones mediante gestos de desplazamiento",
+      "Edición y eliminación de gastos con swipe"
+    ],
+    "demo": "https://starlit-zabaione-edc57e.netlify.app",
+    "source": "https://github.com/SantiJosue/budget-planner"
+  },
+  {
+    "title": "Veterinary Patient Manager",
+    "category": "Frontend",
+    "status": "Completado",
+    "year": "2025 - 2025",
+    "completed": true,
+    "imageSrc": "projects/veterinary-manager.png",
+    "description": "Aplicación web para la gestión y seguimiento de pacientes veterinarios. Permite registrar mascotas, administrar información de propietarios y gestionar consultas mediante una interfaz moderna y responsive.",
+    "skills": [
+      "React",
+      "TypeScript",
+      "Vite",
+      "Tailwind CSS",
+      "Zustand",
+      "React Hook Form"
+    ],
+    "features": [
+      "Registro de pacientes veterinarios",
+      "Edición y eliminación de pacientes",
+      "Gestión de información de mascotas y propietarios",
+      "Formularios con validación",
+      "Manejo de estado global con Zustand"
+    ],
+    "demo": "https://stalwart-gumdrop-c11c42.netlify.app",
+    "source": "https://github.com/SantiJosue/gestion-pacientes-veterinaria"
+  },
+  {
+    "title": "Buscador de Bebidas",
+    "category": "Frontend",
+    "status": "Completado",
+    "year": "2026 - 2026",
+    "completed": true,
+    "imageSrc": "projects/buscador_bebidas.png",
+    "description": "Aplicación web desarrollada con React y TypeScript para buscar recetas de bebidas mediante una API externa, consultar ingredientes e instrucciones y obtener recomendaciones personalizadas con inteligencia artificial.",
+    "skills": [
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Zustand",
+      "Axios",
+      "Zod",
+      "OpenRouter AI"
+    ],
+    "features": [
+      "Búsqueda de bebidas por categoría e ingrediente",
+      "Consulta de recetas mediante API externa",
+      "Visualización de ingredientes e instrucciones",
+      "Recomendaciones personalizadas mediante IA"
+    ],
+    "demo": "https://inquisitive-alfajores-6c879e.netlify.app",
+    "source": "https://github.com/SantiJosue/bebidas"
+  },
+  {
+    "title": "App de Gastos",
+    "category": "Frontend",
+    "status": "Completado",
+    "year": "2024 - 2024",
+    "completed": true,
+    "imageSrc": "projects/app-gastos.png",
+    "description": "Aplicación web para registrar y administrar ingresos y gastos personales, permitiendo organizar las finanzas mediante categorías, filtros y un historial de movimientos.",
+    "skills": [
+      "React",
+      "Firebase",
+      "React Router",
+      "Styled Components",
+      "Date-fns"
+    ],
+    "features": [
+      "Registro y edición de movimientos",
+      "Clasificación por categorías",
+      "Filtrado por fechas",
+      "Persistencia de datos con Firebase"
+    ],
+    "demo": "https://app-gastos-fbf00.web.app",
+    "source": "https://github.com/SantiJosue/app-gastos"
+  }
+]

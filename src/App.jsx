@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
 import Projects from "./components/Projects/Projects";
 import Contact from "./components/Contact/Contact";
-import Educacion from "./components/Education/Education";
+import Education from "./components/Education/Education";
 import Technologies from "./components/Technologies/Technologies";
 
 const App = () => {
@@ -12,7 +12,7 @@ const App = () => {
     <Main>
       <Navbar />
       <Hero />
-      <Educacion />
+      <Education />
       <Technologies />
       <Projects />
       <Contact />

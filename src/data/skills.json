@@ -1,18 +1,50 @@
 [
-    {
-      "title": "HTML",
-      "imageSrc": "skills/html.png"
-    },
-    {
-      "title": "CSS",
-      "imageSrc": "skills/css.png"
-    },
-    {
-      "title": "React",
-      "imageSrc": "skills/react.png"
-    },
-    {
-      "title": "Node",
-      "imageSrc": "skills/node.png"
-    }
-  ]
+  {
+    "title": "HTML",
+    "icon": "FaHtml5"
+  },
+  {
+    "title": "CSS",
+    "icon": "FaCss3Alt"
+  },
+  {
+    "title": "JavaScript",
+    "icon": "FaJs"
+  },
+  {
+    "title": "React",
+    "icon": "FaReact"
+  },
+  {
+    "title": "Vite",
+    "icon": "SiVite"
+  },
+  {
+    "title": "Tailwind CSS",
+    "icon": "SiTailwindcss"
+  },
+  {
+    "title": "Styled Components",
+    "icon": "SiStyledcomponents"
+  },
+  {
+    "title": "Node.js",
+    "icon": "FaNodeJs"
+  },
+  {
+    "title": "MongoDB",
+    "icon": "SiMongodb"
+  },
+  {
+    "title": "Express",
+    "icon": "SiExpress"
+  },
+  {
+    "title": "Git",
+    "icon": "FaGitAlt"
+  },
+  {
+    "title": "GitHub",
+    "icon": "FaGithub"
+  }
+]

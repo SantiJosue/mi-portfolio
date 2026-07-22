@@ -1,50 +1,42 @@
 import { getImageUrl } from "../../utils";
 import styled from "styled-components";
 import './../../vars.css';
+import { breakpoints } from "../../../breakpoints";
+import { ArrowRight, Mail } from "lucide-react";
 
 const Hero = () => {
     return (
         <Container>
             <Content>
                 <Title>Santiago Fernández</Title>
-                <h2>Sobre mi</h2>
+                <h2>Frontend Developer</h2>
                 <Description>
-                    Actualmente estoy enfocado en el desarrollo Front-end.
-                    Mi principal objetivo es ampliar mis conocimientos en los distintos lenguajes de programacion y seguir creciendo profesionalmente.
+                    Soy desarrollador Front-end especializado en React y TypeScript. Me apasiona crear interfaces modernas, responsivas y accesibles, aplicando buenas prácticas de desarrollo. Actualmente continúo ampliando mis conocimientos en desarrollo Full Stack y construyendo proyectos que me permiten seguir creciendo profesionalmente.
                 </Description>
                 <ContainerBtn>
-                    <ContactBtn href="#proyectos" id="#proyectos">Proyectos</ContactBtn>
-                    <ContactBtn href="mailto:myemail@email.com">Contactame</ContactBtn>
+                    <ContactBtn href="#proyectos">Proyectos <ArrowRight size={18} /></ContactBtn>
+                    <ContactBtn href="mailto:santiiagofer22@gmail.com">Contactame <Mail size={18} /></ContactBtn>
                 </ContainerBtn>
             </Content>
-            <HeroImg src={getImageUrl("hero/heroImage.png")} alt="Hero image of me" />
+            <HeroImg src={getImageUrl("hero/heroImage2.png")} alt="Fotografía de Santiago Fernández" />
             <TopBlur></TopBlur>
             <BottomBlur></BottomBlur>
         </Container>
     );
 }
 
-const breakpoint = "1024px";
-
 const Container = styled.section`
-    position: relative;
+    min-height: calc(100dvh - var(--navbar-height));
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
+    justify-content: center;
+    position: relative;
     text-align: center;
-    justify-content: space-between;
-    margin-top: 3rem;
     z-index: 1;
-
     max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     padding: 0 10%;
-
-    @media screen and (max-width: 1024px) {
-        flex-direction: column-reverse;
-        margin-top: 2rem;
-    }
 `;
 
 const Content = styled.div`
@@ -54,89 +46,123 @@ const Content = styled.div`
     color: var(--color-text);
     z-index: 1;
 
-    @media screen and (max-width: ${breakpoint}) {
+    @media screen and (max-width: ${breakpoints.tablet}) {
         align-items: center;
     }
 
     h2{
         color: var(--color-text);
-        font-size: 30px;
+        font-size: clamp(1.5rem, 6vw, 2rem);
         font-weight: 700;
-        letter-spacing: 1.75px;
+        letter-spacing: 2px;
         text-transform: uppercase;
-
-        @media screen and (max-width: ${breakpoint}) {
-            margin-top: 2rem;
-        }
     }
 `;
 
 const Title = styled.h1`
-    font-size: 40px;
+    font-size: clamp(2.5rem, 6vw, 3.8rem);
     font-weight: 900;
-    margin-top: 2rem;
+    margin-top: 1rem;
     margin-bottom: 2rem;
     font-family: var(--font-roboto);
 
-    @media screen and (max-width: ${breakpoint}) {
-        font-size: 30px;
+    @media screen and (max-width: ${breakpoints.tablet}) { 
         margin-top: 14px;
-        margin-bottom: 0;
+        margin-bottom: 1rem;
     }
 `;
 
 const Description = styled.p`
-    font-size: 20px;
     font-family: var(--font-roboto);
-    margin-bottom: 52px;
-    margin-top: 14px;
+    max-width: 620px;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top:1rem;
+    margin-bottom:2rem;
 
-    @media screen and (max-width: ${breakpoint}) {
-        font-size: 25px;
-        margin-bottom: 14px;
+    @media screen and (max-width: ${breakpoints.tablet}) {
+        font-size: 17px;
+        margin-bottom: 1.2rem;
     }
 `;
 
 const ContainerBtn = styled.div`
-    display: flex;
-    gap: 15px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:20px;
+
+    @media (max-width:${breakpoints.tablet}){
+        gap:14px;
+
+        width:auto;
+
+        margin-top:0.5rem;
+
+    }
 `;
 
 const ContactBtn = styled.a`
-    text-decoration: none;
-    background-color: var(--color-primary);
-    color: var(--color-text);
-    border-radius: 100px;
-    font-size: 25px;
-    font-weight: 600;
-    padding: 17px 26px;
-    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
-    transition: all .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+
+    text-decoration:none;
+    background-color:var(--color-primary);
+    color:var(--color-text);
+    border-radius:100px;
+    font-size:clamp(15px, 2vw, 18px);
+    padding:
+        clamp(10px, 1.5vw, 14px)
+        clamp(20px, 3vw, 28px);
+    font-weight:600;
+    min-width:120px;
+    text-align:center;
+    box-shadow: 0 0 4px rgba(0,0,0,.25);
+    transition: .3s;
 
     &:hover{
-        background-color: var(--color-text);
-        color: var(--color-primary);
+        background-color:var(--color-text);
+        color:var(--color-primary);
+        transform:scale(1.03);
     }
 
-    @media screen and (max-width: ${breakpoint}) {
-        font-size: 22px;
-        padding: 8px 16px;
-        margin-top: 2rem;
+    @media(max-width:${breakpoints.tablet}){
+        width:auto;
     }
 `;
 
 const HeroImg = styled.img`
-    width: 400px;
-    height: 400px;
+    width:clamp(180px, 35vw, 400px);
+    height:clamp(180px, 35vw, 400px);
     border-radius: 100%;
     display: block;
     object-fit: cover;
     z-index: 1;
+    box-shadow: 0 15px 35px rgba(0,0,0,.35);
+    animation: float 6s ease-in-out infinite;
+    filter: drop-shadow(0 20px 35px rgba(87,108,188,.25));
+    border: 2px solid rgba(87,108,188,.15);
 
-    @media screen and (max-width: ${breakpoint}) {
+    @media screen and (max-width: ${breakpoints.tablet}) {
         width: 200px;
         height: 200px;
     }
+
+    @keyframes float {
+    0%{
+        transform: translateY(0);
+    }
+
+    50%{
+        transform: translateY(-8px);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+}
 `;
 
 const TopBlur = styled.div`

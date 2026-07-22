@@ -1,3 +1,5 @@
+import { breakpoints } from '../../../breakpoints';
+import { Section } from '../common/Section';
 import projects from './../../data/projects.json';
 import ProjectCard from './ProjectCard';
 import styled from 'styled-components';
@@ -17,30 +19,19 @@ const Projects = () => {
     );
 }
 
-const breakpoint = "1024px"
-
-const Container = styled.section`
+const Container = styled(Section)`
     color: var(--color-text);
-    background: rgba(12, 12, 12, 0.4);
-    border-radius: 15px;
     position: relative;
-    padding: 2rem 5%;
     display: flex;
     flex-direction: column;
     gap: 2rem;
     text-align: center;
-    margin: 6rem auto 0 auto;
-    max-width: 1200px;
-
-    @media screen and (max-width: ${breakpoint}) {
-        padding: 73px 10px;
-    }
 `;
  
 const Title = styled.h2`
-    font-size: 35px;
+    font-size: 2rem;
     font-weight: 700;
-    letter-spacing: 1.75px;
+    letter-spacing: 2px;
     text-transform: uppercase;
 
     @media screen and (max-width: 830px) {
@@ -49,15 +40,14 @@ const Title = styled.h2`
 `;
 
 const Content = styled.div`
-    margin-top: 2rem;
     display: flex;
-    gap: 2rem;
+    gap:2rem;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly;
+    align-items: stretch;
+    justify-content: center;
     width: 100%;
 
-    @media screen and (max-width: 830px) {
+    @media screen and (max-width: ${breakpoints.mobile}) {
         justify-content: center;
         gap: 30px;
     }

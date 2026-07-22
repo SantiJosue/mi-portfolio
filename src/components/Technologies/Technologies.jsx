@@ -1,116 +1,93 @@
-import { getImageUrl } from '../../utils';
+import { icons } from '../../utils';
 import skills from '../../data/skills.json';
 import styled from 'styled-components';
+import { breakpoints } from '../../../breakpoints';
+import { Section } from '../common/Section';
+import {  cardStyles } from '../common/Card';
 
 const Technologies = () => {
+    
     return (
         <Container id="tecnologias">
             <Title>Tecnologías</Title>
-                <Content>
-                    <Skills>
-                        {
-                            skills.map((skill, id) => {
-                                return <Skill key={id}>
-                                            <SkillImageContainer>
-                                                <img src={getImageUrl(skill.imageSrc)} alt={skill.title} />
-                                            </SkillImageContainer>
-                                            <p>{skill.title}</p>
-                                        </Skill>
-                            })
-                        }
-                    </Skills>
-                </Content>
+                <Skills>
+                {skills.map((skill) => {
+                    const Icon = icons[skill.icon];
+
+                    return (
+                    <Skill key={skill.title}>
+                        <SkillImageContainer>
+                        <Icon size={50} />
+                        </SkillImageContainer>
+
+                        <SkillName>{skill.title}</SkillName>
+                    </Skill>
+                    );
+                })}
+                </Skills>
         </Container>
     );
 }
 
-const breakpoint = "1024px";
-
-const Container = styled.section`
+const Container = styled(Section)`
     color: var(--color-text);
-    background: rgba(12, 12, 12, 0.4);
-    border-radius: 15px;
-    position: relative;
-    padding: 2rem 5%;
     display: flex;
     flex-direction: column;
     gap: 2rem;
     text-align: center;
-    margin: 6rem auto 0 auto;
-    max-width: 1200px;
 
-    @media screen and (max-width: ${breakpoint}) {
-        padding: 73px 10px;
+    @media screen and (max-width: ${breakpoints.tablet}) {
+        padding: 2rem 1rem;
     }
 `;
  
 const Title = styled.h2`
     color: var(--color-text);
-    font-size: 35px;
+    font-size: 2rem;
     font-weight: 700;
-    letter-spacing: 1.75px;
+    letter-spacing: 2px;
     text-transform: uppercase;
 `;
 
-const Content = styled.div`
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin-top: 14px;
-
-    @media screen and (max-width: ${breakpoint}) {
-        flex-direction: column;
-        align-items: center;
-        gap: 34px;
-    }
+const Skills = styled.ul`
+    width:100%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:30px;
 `;
 
-const Skills = styled.div`
-    width: 45%;
-    display: flex;
-    justify-content: center;
-    gap: 37px;
+const Skill = styled.li`
+    ${cardStyles}
 
-    @media screen and (max-width: ${breakpoint}) {
-        width: 100%;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-top: 14px;
-    }
+    width:clamp(140px,20vw,150px);
+    min-height:170px;
+    display:flex;
+    padding: 0 1rem;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
 `;
 
-const Skill = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 11px;
-    transition: all .3s;
-
-    &:hover{
-        opacity: .8;
-    }
-
-    p{
-        font-size: 25px;
-        font-family: var(--font-roboto);
-        font-weight: 500;
-    }
-`;
+const SkillName = styled.p`
+    margin:0;
+    font-size:1rem;
+    font-family:var(--font-roboto);
+    font-weight:700;
+`
 
 const SkillImageContainer = styled.figure`
-    background-color: var(--color-dark);
-    border-radius: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 120px;
-    height: 120px;
+  width: 85px;
+  height: 85px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
 
-    img{
-        width: 75px;
-        object-fit: contain;
-    }
+  background: rgba(4, 21, 45, 0.8);
+  border-radius: 50%;
+  border: 1px solid rgba(87, 108, 188, 0.25);
 `;
 
 export default Technologies;
