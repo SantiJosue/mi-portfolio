@@ -13,7 +13,7 @@ El objetivo del proyecto fue crear una aplicación moderna, responsive y reutili
 
 **Aplicación**
 
-> https://tu-portfolio.vercel.app
+> https://mi-portfolio-mocha-xi.vercel.app
 
 ---
 
