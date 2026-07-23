@@ -56,18 +56,18 @@ const Content = styled.div`
 
     h2{
         color: var(--color-text);
-        font-size: clamp(1.5rem, 6vw, 2rem);
-        font-weight: 700;
-        letter-spacing: 2px;
-        text-transform: uppercase;
+        font-size: clamp(1.15rem, 4vw, 1.8rem);
+        letter-spacing: 1px;
+        font-weight: 600;
     }
 `;
 
 const Title = styled.h1`
-    font-size: clamp(2.5rem, 6vw, 3.8rem);
+    font-size: clamp(2rem, 8vw, 3.8rem);
+    line-height: 1.1;
     font-weight: 900;
     margin-top: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: .6rem;
     font-family: var(--font-roboto);
 
     @media screen and (max-width: ${breakpoints.tablet}) { 
@@ -79,8 +79,10 @@ const Title = styled.h1`
 const Description = styled.p`
     font-family: var(--font-roboto);
     max-width: 620px;
-    font-size: 18px;
-    line-height: 1.6;
+    max-width: 680px;
+    font-size: clamp(1rem, 2vw, 1.125rem);
+    line-height: 1.5;
+    color: rgba(255,255,255,.88);
     margin-top:1rem;
     margin-bottom:2rem;
 
@@ -116,7 +118,7 @@ const ContactBtn = styled.a`
     background-color:var(--color-primary);
     color:var(--color-text);
     border-radius:100px;
-    font-size:clamp(15px, 2vw, 18px);
+    font-size: clamp(.95rem,1.5vw,1rem);
     padding:
         clamp(10px, 1.5vw, 14px)
         clamp(20px, 3vw, 28px);
