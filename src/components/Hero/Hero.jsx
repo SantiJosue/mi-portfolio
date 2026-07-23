@@ -39,7 +39,7 @@ const Container = styled.section`
     padding: 0 10%;
 
     @media screen and (max-width: ${breakpoints.tablet}) {
-        padding: 2rem 10% 0;
+        padding: 1rem 10% 0;
     }
 `;
 
@@ -47,6 +47,7 @@ const Content = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 1rem;
     color: var(--color-text);
     z-index: 1;
 
@@ -56,7 +57,7 @@ const Content = styled.div`
 
     h2{
         color: var(--color-text);
-        font-size: clamp(1.15rem, 4vw, 1.8rem);
+        font-size: clamp(1.4rem, 3vw, 2rem);
         letter-spacing: 1px;
         font-weight: 600;
     }
@@ -66,30 +67,15 @@ const Title = styled.h1`
     font-size: clamp(2rem, 8vw, 3.8rem);
     line-height: 1.1;
     font-weight: 900;
-    margin-top: 1rem;
-    margin-bottom: .6rem;
     font-family: var(--font-roboto);
-
-    @media screen and (max-width: ${breakpoints.tablet}) { 
-        margin-top: 14px;
-        margin-bottom: 1rem;
-    }
 `;
 
 const Description = styled.p`
-    font-family: var(--font-roboto);
     max-width: 620px;
-    max-width: 680px;
+    font-family: var(--font-roboto);
     font-size: clamp(1rem, 2vw, 1.125rem);
     line-height: 1.5;
     color: rgba(255,255,255,.88);
-    margin-top:1rem;
-    margin-bottom:2rem;
-
-    @media screen and (max-width: ${breakpoints.tablet}) {
-        font-size: 17px;
-        margin-bottom: 1.2rem;
-    }
 `;
 
 const ContainerBtn = styled.div`
@@ -100,9 +86,7 @@ const ContainerBtn = styled.div`
 
     @media (max-width:${breakpoints.tablet}){
         gap:14px;
-
         width:auto;
-
         margin-top:0.5rem;
 
     }
@@ -113,7 +97,6 @@ const ContactBtn = styled.a`
     align-items: center;
     justify-content: center;
     gap: .5rem;
-
     text-decoration:none;
     background-color:var(--color-primary);
     color:var(--color-text);
@@ -147,7 +130,7 @@ const HeroImg = styled.img`
     object-fit: cover;
     z-index: 1;
     box-shadow: 0 15px 35px rgba(0,0,0,.35);
-    /* animation: float 6s ease-in-out infinite; */
+    animation: float 6s ease-in-out infinite;
     filter: drop-shadow(0 20px 35px rgba(87,108,188,.25));
     border: 2px solid rgba(87,108,188,.15);
 
@@ -156,7 +139,7 @@ const HeroImg = styled.img`
         height: 200px;
     }
 
-    /* @keyframes float {
+    @keyframes float {
         0%{
             transform: translateY(0);
         }
@@ -168,7 +151,7 @@ const HeroImg = styled.img`
         100%{
             transform: translateY(0);
         }
-    } */
+    }
 `;
 
 const TopBlur = styled.div`
