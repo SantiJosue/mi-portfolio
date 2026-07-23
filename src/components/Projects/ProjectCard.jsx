@@ -100,10 +100,6 @@ const Skill = styled.li`
   border: 1px solid rgba(87, 108, 188, 0.25);
   padding: 6px 14px;
   transition: .3s;
-
-  &:hover {
-    background: var(--color-primary);
-  }
 `;
 
 const Links = styled.footer`

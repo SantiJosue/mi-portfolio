@@ -37,6 +37,10 @@ const Container = styled.section`
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 10%;
+
+    @media screen and (max-width: ${breakpoints.tablet}) {
+        padding: 2rem 10% 0;
+    }
 `;
 
 const Content = styled.div`
@@ -141,7 +145,7 @@ const HeroImg = styled.img`
     object-fit: cover;
     z-index: 1;
     box-shadow: 0 15px 35px rgba(0,0,0,.35);
-    animation: float 6s ease-in-out infinite;
+    /* animation: float 6s ease-in-out infinite; */
     filter: drop-shadow(0 20px 35px rgba(87,108,188,.25));
     border: 2px solid rgba(87,108,188,.15);
 
@@ -150,19 +154,19 @@ const HeroImg = styled.img`
         height: 200px;
     }
 
-    @keyframes float {
-    0%{
-        transform: translateY(0);
-    }
+    /* @keyframes float {
+        0%{
+            transform: translateY(0);
+        }
 
-    50%{
-        transform: translateY(-8px);
-    }
+        50%{
+            transform: translateY(-8px);
+        }
 
-    100%{
-        transform: translateY(0);
-    }
-}
+        100%{
+            transform: translateY(0);
+        }
+    } */
 `;
 
 const TopBlur = styled.div`
