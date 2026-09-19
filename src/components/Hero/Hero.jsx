@@ -15,7 +15,7 @@ const Hero = () => {
                 </Description>
                 <ContainerBtn>
                     <ContactBtn href="#proyectos">Proyectos <ArrowRight size={18} /></ContactBtn>
-                    <ContactBtn href={'/public/cv/cv-Santiago-Fernandez.docx'} target="_blank" rel="noopener noreferrer">CV <File size={18} /></ContactBtn>
+                    <ContactBtn href={'/public/cv/cv-Santiago-Fernandez.pdf'} target="_blank" rel="noopener noreferrer">CV <File size={18} /></ContactBtn>
                 </ContainerBtn>
             </Content>
             <HeroImg src={getImageUrl("hero/heroImage.webp")} alt="Fotografía de Santiago Fernández" />

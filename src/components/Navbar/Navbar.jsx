@@ -30,6 +30,9 @@ const Navbar = () => {
                 </MenuBtn>
 
             </Nav>
+
+            {menuOpen && <Overlay onClick={() => toggleMenu(prev => !prev)} />}
+
             <SideMenu $open={menuOpen}>
                 <CloseButton onClick={toggleMenu}>
                     <X size={30}/>
@@ -121,6 +124,14 @@ const MenuBtn = styled.button`
         width:45px;
         height:45px;
     }
+`;
+
+const Overlay = styled.div`
+    position: fixed;
+    background-color: black/50;
+    inset: 0;
+    background: rgba(0, 0, 0, .4);
+    z-index: 25;;
 `;
 
 const SideMenu = styled.ul`
