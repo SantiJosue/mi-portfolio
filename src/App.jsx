@@ -10,10 +10,8 @@ import Technologies from "./components/Technologies/Technologies";
 const App = () => {
   return (
     <Main>
-      <div data-aos="fade-up">
-          <Navbar />
-          <Hero />
-      </div>
+      <Navbar />
+      <Hero />
       <Education />
       <Technologies />
       <Projects />

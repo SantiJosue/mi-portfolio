@@ -6,7 +6,7 @@ import { ArrowRight, File } from "lucide-react";
 
 const Hero = () => {
     return (
-        <Container>
+        <Container data-aos="fade-up">
             <Content>
                 <Title>Santiago Fernández</Title>
                 <h2>Frontend Developer</h2>
