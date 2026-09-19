@@ -128,10 +128,9 @@ const MenuBtn = styled.button`
 
 const Overlay = styled.div`
     position: fixed;
-    background-color: black/50;
     inset: 0;
-    background: rgba(0, 0, 0, .4);
-    z-index: 25;;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 25;
 `;
 
 const SideMenu = styled.ul`
