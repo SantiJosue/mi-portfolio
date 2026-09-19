@@ -1,11 +1,36 @@
 [
   {
+    "title": "Tienda de Comida",
+    "category": "Full Stack",
+    "status": "Completado",
+    "completed": true,
+    "year": "2026 - 2026",
+    "imageSrc": "projects/app-tienda.webp",
+    "description": "Aplicación web full stack con autenticación JWT que permite gestionar hábitos personales y realizar seguimiento automático de rachas.",
+    "skills": [
+      "React",
+      "TypeScript",
+      "Express",
+      "PostgresSQL",
+      "Zustand",
+      "Zod",
+      "Tailwind CSS"
+    ],
+    "features": [
+      "Autenticación mediante JWT",
+      "Protección de rutas privadas",
+      "Seguimiento automático de rachas"
+    ],
+    "demo": "https://tienda-next-app-router-gamma.vercel.app/order/cafe",
+    "source": "https://github.com/SantiJosue/tienda_next_app_router"
+  },
+  {
     "title": "Habit Tracker",
     "category": "Full Stack",
     "status": "En desarrollo",
     "completed": false,
     "year": "2026 - 2026",
-    "imageSrc": "projects/habitTracker.png",
+    "imageSrc": "projects/habitTracker.webp",
     "description": "Aplicación web full stack con autenticación JWT que permite gestionar hábitos personales y realizar seguimiento automático de rachas.",
     "skills": [
       "React",
@@ -28,7 +53,7 @@
     "status": "Completado",
     "year": "2026 - 2026",
     "completed": true,
-    "imageSrc": "projects/uptask.png",
+    "imageSrc": "projects/uptask.webp",
     "description": "Aplicación web full stack para la gestión de proyectos y tareas, con autenticación de usuarios y herramientas para organizar, administrar y dar seguimiento al progreso de cada proyecto.",
     "skills": ["React", "Express", "Node", "MongoDB", "Sass", "JWT"],
     "features": [
@@ -46,7 +71,7 @@
     "status": "Completado",
     "year": "2025 - 2025",
     "completed": true,
-    "imageSrc": "projects/budget-planner.png",
+    "imageSrc": "projects/budget-planner.webp",
     "description": "Aplicación web para la planificación y control de gastos personales. Permite establecer un presupuesto, registrar movimientos y visualizar el dinero disponible mediante una interfaz interactiva.",
     "skills": [
       "React",
@@ -72,7 +97,7 @@
     "status": "Completado",
     "year": "2025 - 2025",
     "completed": true,
-    "imageSrc": "projects/veterinary-manager.png",
+    "imageSrc": "projects/veterinary-manager.webp",
     "description": "Aplicación web para la gestión y seguimiento de pacientes veterinarios. Permite registrar mascotas, administrar información de propietarios y gestionar consultas mediante una interfaz moderna y responsive.",
     "skills": [
       "React",
@@ -98,7 +123,7 @@
     "status": "Completado",
     "year": "2026 - 2026",
     "completed": true,
-    "imageSrc": "projects/buscador_bebidas.png",
+    "imageSrc": "projects/buscador_bebidas.webp",
     "description": "Aplicación web desarrollada con React y TypeScript para buscar recetas de bebidas mediante una API externa, consultar ingredientes e instrucciones y obtener recomendaciones personalizadas con inteligencia artificial.",
     "skills": [
       "React",
@@ -124,7 +149,7 @@
     "status": "Completado",
     "year": "2024 - 2024",
     "completed": true,
-    "imageSrc": "projects/app-gastos.png",
+    "imageSrc": "projects/app-gastos.webp",
     "description": "Aplicación web para registrar y administrar ingresos y gastos personales, permitiendo organizar las finanzas mediante categorías, filtros y un historial de movimientos.",
     "skills": [
       "React",

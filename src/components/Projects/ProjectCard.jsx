@@ -45,6 +45,19 @@ const Container = styled.article`
   width: clamp(280px, 30vw, 360px);
   padding: clamp(1rem, 3vw, 1.5rem);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  background-image: linear-gradient(
+    90deg,
+    rgba(87, 108, 188, 0.15) 0%,
+    rgba(87, 108, 188, 0) 100%
+  );
+  background-size: 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size .4s, transform .3s ease-out;
+    
+
+    &:hover {
+        background-size: 100% 100%;
+    }
 
   @media (max-width: ${breakpoints.tablet}) {
     width:100%;
@@ -55,7 +68,7 @@ const Container = styled.article`
 const Image = styled.img`
   width: 100%;
   aspect-ratio: 16 / 9;
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 15px;
   border: 1px solid rgba(87, 108, 188, 0.25);
 `;

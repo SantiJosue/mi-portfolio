@@ -6,7 +6,7 @@ import styled from 'styled-components';
 
 const Projects = () => {
     return (
-        <Container id='proyectos'>
+        <Container id='proyectos'  data-aos="fade-up">
             <Title>Proyectos</Title>
             <Content>
                 {

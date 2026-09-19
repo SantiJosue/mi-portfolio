@@ -2,7 +2,7 @@ import { getImageUrl } from "../../utils";
 import styled from "styled-components";
 import './../../vars.css';
 import { breakpoints } from "../../../breakpoints";
-import { ArrowRight, Mail } from "lucide-react";
+import { ArrowRight, File } from "lucide-react";
 
 const Hero = () => {
     return (
@@ -15,10 +15,10 @@ const Hero = () => {
                 </Description>
                 <ContainerBtn>
                     <ContactBtn href="#proyectos">Proyectos <ArrowRight size={18} /></ContactBtn>
-                    <ContactBtn href="mailto:santiiagofer22@gmail.com">Contactame <Mail size={18} /></ContactBtn>
+                    <ContactBtn href={'/public/cv/cv-Santiago-Fernandez.docx'} target="_blank" rel="noopener noreferrer">CV <File size={18} /></ContactBtn>
                 </ContainerBtn>
             </Content>
-            <HeroImg src={getImageUrl("hero/heroImage2.png")} alt="Fotografía de Santiago Fernández" />
+            <HeroImg src={getImageUrl("hero/heroImage.webp")} alt="Fotografía de Santiago Fernández" />
             <TopBlur></TopBlur>
             <BottomBlur></BottomBlur>
         </Container>
@@ -131,8 +131,7 @@ const HeroImg = styled.img`
     z-index: 1;
     box-shadow: 0 15px 35px rgba(0,0,0,.35);
     animation: float 6s ease-in-out infinite;
-    filter: drop-shadow(0 20px 35px rgba(87,108,188,.25));
-    border: 2px solid rgba(87,108,188,.15);
+    filter: blur(.55px) drop-shadow(0 20px 35px rgba(87,108,188,.25));
 
     @media screen and (max-width: ${breakpoints.tablet}) {
         width: 200px;

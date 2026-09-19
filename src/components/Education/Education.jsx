@@ -6,7 +6,7 @@ import education from './../../data/education.json'
 
 const Education = () => {
     return (
-        <Container id="educacion">
+        <Container id="educacion" data-aos="fade-up">
             <Title>Educación</Title>
             <EducationSection>
             {education.map((education) => (
@@ -72,7 +72,19 @@ const EducationItem = styled.article`
     justify-self: center;
     align-items:center;
     gap:1rem;
-    transition: .3s;
+    background-image: linear-gradient(
+        90deg,
+        rgba(87, 108, 188, 0.15) 0%,
+        rgba(87, 108, 188, 0) 100%
+    );
+    background-size: 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size .4s, transform .3s ease-out;
+    
+
+    &:hover {
+        background-size: 100% 100%;
+    }
 
     h3{
         color:var(--color-primary);
