@@ -16,5 +16,11 @@
         "year": ["Noviembre 2023", "Junio 2024"],
         "institutionLogo": "education/UdemyLogo.webp",
         "certificate": "/certificados/Nodejs.pdf"
+    },
+    {
+        "title": "React y TypeScript",
+        "year": ["Abril 2025", "Septiembre 2026"],
+        "institutionLogo": "education/UdemyLogo.webp",
+        "certificate": "/certificados/React-TypeScript.pdf"
     }
 ]
