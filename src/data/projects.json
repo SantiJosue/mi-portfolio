@@ -1,25 +1,30 @@
 [
   {
-    "title": "Tienda de Comida",
+    "title": "Tienda de Comidas",
     "category": "Full Stack",
     "status": "Completado",
     "completed": true,
     "year": "2026 - 2026",
     "imageSrc": "projects/app-tienda.webp",
-    "description": "Aplicación web full stack con autenticación JWT que permite gestionar hábitos personales y realizar seguimiento automático de rachas.",
+    "description": "Aplicación web full stack para la gestión de un negocio de comidas, que permite a los clientes realizar pedidos y al administrador gestionar productos y pedidos desde un panel de administración.",
     "skills": [
+      "Next.js",
       "React",
       "TypeScript",
-      "Express",
-      "PostgresSQL",
+      "Prisma",
+      "PostgreSQL",
       "Zustand",
+      "SWR",
       "Zod",
       "Tailwind CSS"
     ],
     "features": [
-      "Autenticación mediante JWT",
-      "Protección de rutas privadas",
-      "Seguimiento automático de rachas"
+      "Catálogo de productos organizado por categorías y con imágenes y precios",
+      "Carrito de compras y realización de pedidos",
+      "Panel de administración para crear, editar y eliminar productos",
+      "Gestión y seguimiento de pedidos pendientes",
+      "Validación de datos mediante Zod",
+      "Actualización periódica de pedidos mediante SWR"
     ],
     "demo": "https://tienda-next-app-router-gamma.vercel.app/order/cafe",
     "source": "https://github.com/SantiJosue/tienda_next_app_router"
